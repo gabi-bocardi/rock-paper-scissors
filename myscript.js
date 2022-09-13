@@ -8,7 +8,7 @@ function getComputerChoice(){
 const computerSelection = getComputerChoice();
 const playerSelection = prompt("What's your move? Choose Rock, Paper or Scissor.").toUpperCase();
 
-function getWinner(playerSelection,computerSelection){
+function playRound(playerSelection,computerSelection){
    let winMessage = `You win! ${playerSelection} beats ${computerSelection}`;
    let loseMessage = `You lose! ${computerSelection} beats ${playerSelection}`;
    let tieMessage = 'It\'s a tie!';
