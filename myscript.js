@@ -4,8 +4,6 @@ function getComputerChoice(){
     let random = Math.floor(Math.random() * MOVES.length);
     return MOVES[random];
 }
-
-
 function playRound(playerSelection,computerSelection){
 
     if ((playerSelection == MOVES[0] && computerSelection == MOVES[1]) || (playerSelection == MOVES[1] && computerSelection == MOVES[0]))
@@ -43,13 +41,9 @@ function Game(){
     if(computerPoints > userPoints)
         console.log("Computer wins the game");
     else if (computerPoints < userPoints)
-        console.log("You win the game");
+    console.log("You win the game");
     else
         console.log("It's a tie");
-
-    
-
 }
-
 Game();
 
